@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Solicitud de visa</h1>  
+<h2>Antecedentes</h2>
+
+<form>
+
+    <label>¿Tienes antecedentes penales?</label><br>
+    <input type="radio" name="antecedentes_penales" value="si" required> Si
+    <input type="radio" name="antecedentes_penales" value="no"> No <br>
+
+   
+
+    <label>¿Le han negado la visa anteriormente?</label><br>
+    <input type="radio" name="visa_negada" value="si" required> Si
+    <input type="radio" name="visa_negada" value="no"> No <br>
+
+    
+
+    <label>Si su respuesta es "sí", explique el motivo</label><br>
+    <textarea name="detalle_visa"></textarea> <br>
+
+    
+
+    <label>¿Ha sido deportado en algún país?</label><br>
+    <input type="radio" name="deportado" value="si" required> Si
+    <input type="radio" name="deportado" value="no"> No <br>
+
+    
+
+    <label>Si su respuesta es "sí", explique el motivo</label><br>
+    <textarea name="detalle_deportado"></textarea> <br>
+
+
+   
+
+    <label>¿Tiene alguna enfermedad grave?</label><br>
+    <input type="radio" name="enfermedad" value="si" required> Si
+    <input type="radio" name="enfermedad" value="no"> No <br>
+  
+
+    <label>Si su respuesta es "sí", indique su enfermedad</label><br>
+    <textarea name="detalle_enfermedad"></textarea> <br>
+
+   
+
+    <a href="modulo3.html">Anterior</a>
+    <a href="modulo5.html">Siguiente</a> <br>
+
+    
+
+    <button type="submit">Guardar y Continuar</button>
+
+</form>
+
+</body>
+</html>

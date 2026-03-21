@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<h1>Solicitud de Visa</h1>
+<h2>Información laboral o académica</h2>
+
+<form>
+
+    <label>Ocupación Actual</label><br>
+    <input type="text" name="ocupacion" required><br>
+
+    <label>Nombre de la empresa o institución</label><br>
+    <input type="text" name="empresa" required><br>
+
+    <label>Ingresos mensuales</label><br>
+    <input type="number" name="ingresos" min="0"  required><br>
+
+    <label>¿Quién financia el viaje?</label><br>
+    <select name="financiador" required>
+        <option value="">Seleccione una opción</option>
+        <option value="propio">Yo mismo</option>
+        <option value="familiar">Familiar</option>
+        <option value="empresa">Empresa</option>
+        <option value="institucion">Institución</option>
+        <option value="otro">Otro</option>
+    </select><br>
+
+    <label>Si selecciona "otro", especifique:</label><br>
+    <input type="text" name="otro_financiador"><br>
+
+    <a href="modulo2.html">Anterior</a>
+    <a href="modulo4.html">Siguiente</a><br>
+
+    <button type="submit">Guardar y Continuar</button>
+
+</form>
