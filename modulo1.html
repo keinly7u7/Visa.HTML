@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modulo1</title>
+</head>
+<body>
+
+    <h1>Solicitud de visa</h1>
+    <h2>Información personal</h2>
+    <form id="formulario_visa_modulo1" action="formulario.php" method="post">
+
+        <label for="nombre_usuario">Ingrese su nombre completo:</label><br>
+        <input type="text" name="nombre_usuario" placeholder="nombre" size="40" required><br>
+
+
+        <label for="age">Seleccione su edad: </label><br>
+        <select name="age" id="age" required>
+            <option value="">Seleccionar</option>
+        </select><br>
+
+
+        <label for="size">Ingrese su estatura en centimetros</label><br>
+        <input type="number" name="size" id="size" placeholder="cm" required><br>
+
+
+        <label for="nacionality">¿Cuál es su nacionalidad?</label><br>
+        <input type="text" name="nacionality" id="nacionality" required><br>
+
+        <label for="passport">Ingrese su numero de pasaporte en el siguiente recuadro</label><br>
+        <input type="number" name="passport" id="passport" placeholder="##########" required><br>
+
+        <label for="passport_date">Fecha de expedición del pasaporte: </label><br>
+        <input type="date" name="passport_date" id="passport_date" required><br>
+
+        <label for="passport_date_vencimiento">Fecha de vencimiento del pasaporte: </label><br>
+        <input type="date" name="passport_date_vencimiento" id="passport_date_vencimiento" required><br>
+
+        <label for="status">Estado civil: </label><br>
+        <input type="radio" name="status" id="soltero" value="soltero"><label>soltero/a</label>
+        <input type="radio" name="status" id="casado" value="casado"><label>casado/a</label>
+        <input type="radio" name="status" id="divorciado" value="divorciado"><label>divorciado/a</label>
+        <input type="radio" name="status" id="viudo" value="viudo"><label>viudo/a</label>
+        <input type="radio" name="status" id="otro" value="otro"><label>otro</label><br>
+        <input type="text" name="status" id="definir_otro" placeholder="¿Qué otro?"><br>
+    
+    </form>  
+
+       
+        <a href="modulo2.html">siguiente</a><br><br>
+         <a href="modulo_principal.html">Menú principal</a>
+
+</body>
+</html>
+<script>
+    const selectEdad = document.getElementById("age");
+    for (let i = 14; i<=80; i++){
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        selectEdad.appendChild(option);
+    }
+</script>

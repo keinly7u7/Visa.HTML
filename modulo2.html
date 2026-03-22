@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modulo2</title>
+</head>
+<body>
+    <h1>Solicitud de visa</h1>
+    <h2>Información de contacto</h2>
+    <form id="formulario_visa_modulo2">
+
+        <label for="email">Ingrese su correo electrónico: </label><br>
+        <input type="email" name="email_usuario" id="email_usuario" placeholder="example@gmail.com" required><br>
+
+        <label for="phone">Ingrese su numero de celular: </label><br>
+        <input type="number" name="phone_number" id="phone_number" placeholder="#########" required><br>
+
+        <label for="adress">Ingrese la direccion de su lugar de residencia:  </label><br>
+        <input type="text" name="adress" id="adress" required><br>
+
+        <label>Seleccione su departamento de residencia: </label><br>
+        <select name="departamento" id="departamento">
+            <option value="">departamento</option>
+            <option value="Antioquia">Antioquia</option>
+            <option value="Atlantico">Atlántico</option>
+            <option value="Cundinamarca">Cundinamarca</option>
+            <option value="Huila">Huila</option>
+        </select>
+        <select name="municipio" id="municipio">
+            <option value="">Seleccione municipio</option>
+        </select><br>
+        <label for="">¿Ha vivido en otro país en los últimos 5 años?</label><br>
+        <select name="live_other_country" id="live_other_country">
+            <option value="">Seleccione</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <br>
+
+        <div id="campoPais" style="display: none;">
+             <input type="text" id="pais" placeholder="¿En qué país ha vivido?">
+        </div>
+        
+    </form>
+    <a href="modulo1.html">Anterior</a>
+    <a href="modulo3">siguiente</a><br><br>
+    <a href="modulo_principal.html">Menú principal</a>
+    <script src="modulo2.js"></script>
+</body>
+</html>
